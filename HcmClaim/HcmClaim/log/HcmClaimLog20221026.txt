@@ -1,0 +1,807 @@
+2022-10-26 08:48:37.222 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-10-26 08:48:37.293 +05:30 [DBG] Hosting starting
+2022-10-26 08:48:37.338 +05:30 [DBG] Loaded hosting startup assembly HcmClaim
+2022-10-26 08:48:37.338 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-26 08:48:37.338 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-26 08:48:37.338 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-26 08:48:37.339 +05:30 [INF] Hosting environment: Development
+2022-10-26 08:48:37.339 +05:30 [INF] Content root path: C:\HCM\HcmClaim\HcmClaim\
+2022-10-26 08:48:37.339 +05:30 [DBG] Hosting started
+2022-10-26 08:48:37.357 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/index.html - -
+2022-10-26 08:48:37.394 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-10-26 08:48:37.407 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-10-26 08:48:37.407 +05:30 [DBG] Request did not match any endpoints
+2022-10-26 08:48:37.466 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-10-26 08:48:38.095 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2022-10-26 08:48:38.097 +05:30 [DBG] Connection ID "17726168165005656313" disconnecting.
+2022-10-26 08:48:38.098 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/index.html - - - 200 - text/html;charset=utf-8 742.4108ms
+2022-10-26 08:48:38.100 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/_framework/aspnetcore-browser-refresh.js - -
+2022-10-26 08:48:38.104 +05:30 [DBG] Connection ID "18302628925899014537" disconnecting.
+2022-10-26 08:48:38.104 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 2.9667ms
+2022-10-26 08:48:38.117 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/_vs/browserLink - -
+2022-10-26 08:48:38.171 +05:30 [DBG] Connection ID "18374686528526876986" disconnecting.
+2022-10-26 08:48:38.171 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.7512ms
+2022-10-26 08:48:38.223 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/v1/swagger.json - -
+2022-10-26 08:48:38.223 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-10-26 08:48:38.223 +05:30 [DBG] Request did not match any endpoints
+2022-10-26 08:48:38.291 +05:30 [DBG] Connection ID "18302628925899014539" disconnecting.
+2022-10-26 08:48:38.291 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 68.4812ms
+2022-10-26 08:58:09.538 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim application/json 91
+2022-10-26 08:58:09.544 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 08:58:09.546 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)' with route pattern 'HealthCare/SubmitClaim' is valid for the request path '/HealthCare/SubmitClaim'
+2022-10-26 08:58:09.547 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 08:58:09.548 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 08:58:09.549 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 08:58:09.566 +05:30 [INF] Route matched with {action = "SubmitClaim", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SubmitClaim(HcmClaim.Dto.ClaimDto) on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 08:58:09.569 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 08:58:09.569 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 08:58:09.569 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 08:58:09.569 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 08:58:09.569 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 08:58:09.569 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 08:58:09.688 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-26 08:58:09.777 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 08:58:09.780 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 08:58:09.782 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' using the name '' in request data ...
+2022-10-26 08:58:09.782 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-26 08:58:09.788 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'HcmClaim.Dto.ClaimDto'
+2022-10-26 08:58:09.788 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 08:58:09.788 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 08:58:09.788 +05:30 [DBG] Attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 08:58:09.794 +05:30 [DBG] Done attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 08:58:09.818 +05:30 [INF] Adding claim to database
+2022-10-26 08:58:10.312 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-26 08:58:10.339 +05:30 [DBG] 'ToDoContext' generated a temporary value for the property 'ClaimId.Claim'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 08:58:10.382 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 08:58:10.384 +05:30 [DBG] SaveChanges starting for 'ToDoContext'.
+2022-10-26 08:58:10.387 +05:30 [DBG] DetectChanges starting for 'ToDoContext'.
+2022-10-26 08:58:10.395 +05:30 [DBG] DetectChanges completed for 'ToDoContext'.
+2022-10-26 08:58:10.439 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 08:58:10.677 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 08:58:10.678 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-10-26 08:58:10.686 +05:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2022-10-26 08:58:10.740 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-26 08:58:10.747 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2022-10-26 08:58:10.767 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 1000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Claims] ([ClaimAmount], [ClaimDate], [ClaimType], [MemberId], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [ClaimId]
+FROM [Claims]
+WHERE @@ROWCOUNT = 1 AND [ClaimId] = scope_identity();
+2022-10-26 08:58:10.809 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 1000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Claims] ([ClaimAmount], [ClaimDate], [ClaimType], [MemberId], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [ClaimId]
+FROM [Claims]
+WHERE @@ROWCOUNT = 1 AND [ClaimId] = scope_identity();
+2022-10-26 08:58:10.826 +05:30 [DBG] The foreign key property 'Claim.ClaimId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-10-26 08:58:10.835 +05:30 [DBG] A data reader was disposed.
+2022-10-26 08:58:10.838 +05:30 [DBG] Committing transaction.
+2022-10-26 08:58:10.841 +05:30 [DBG] Committed transaction.
+2022-10-26 08:58:10.842 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 08:58:10.846 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 08:58:10.847 +05:30 [DBG] Disposing transaction.
+2022-10-26 08:58:10.855 +05:30 [DBG] An entity of type 'Claim' tracked by 'ToDoContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 08:58:10.856 +05:30 [DBG] SaveChanges completed for 'ToDoContext' with 1 entities written to the database.
+2022-10-26 08:58:10.857 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 08:58:10.858 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 08:58:10.858 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-26 08:58:10.858 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-26 08:58:10.859 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-26 08:58:10.859 +05:30 [INF] Executing CreatedResult, writing value of type 'HcmClaim.Modals.Claim'.
+2022-10-26 08:58:10.867 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim) in 1293.8004ms
+2022-10-26 08:58:10.867 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 08:58:10.868 +05:30 [DBG] Connection ID "17798225763338551458" disconnecting.
+2022-10-26 08:58:10.869 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-26 08:58:10.871 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim application/json 91 - 201 - application/json;+charset=utf-8 1332.8104ms
+2022-10-26 11:29:35.280 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim text/plain;charset=UTF-8 231
+2022-10-26 11:29:35.285 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 11:29:35.286 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)' with route pattern 'HealthCare/SubmitClaim' is valid for the request path '/HealthCare/SubmitClaim'
+2022-10-26 11:29:35.287 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:29:35.288 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 11:29:35.290 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:29:35.293 +05:30 [INF] Route matched with {action = "SubmitClaim", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SubmitClaim(HcmClaim.Dto.ClaimDto) on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 11:29:35.295 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 11:29:35.295 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 11:29:35.295 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 11:29:35.295 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 11:29:35.295 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 11:29:35.295 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 11:29:35.304 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 11:29:35.306 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 11:29:35.307 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' using the name '' in request data ...
+2022-10-26 11:29:35.308 +05:30 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'text/plain;charset=UTF-8'.
+2022-10-26 11:29:35.308 +05:30 [DBG] No input formatter was found to support the content type 'text/plain;charset=UTF-8' for use with the [FromBody] attribute.
+2022-10-26 11:29:35.312 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:29:35.312 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:29:35.312 +05:30 [DBG] Attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 11:29:35.314 +05:30 [DBG] Done attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:29:35.316 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter'.
+2022-10-26 11:29:35.318 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 11:29:35.318 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 11:29:35.319 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-10-26 11:29:35.319 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-10-26 11:29:35.319 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-10-26 11:29:35.328 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim) in 32.758ms
+2022-10-26 11:29:35.328 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:29:35.328 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim text/plain;charset=UTF-8 231 - 415 - application/problem+json;+charset=utf-8 57.1389ms
+2022-10-26 11:29:35.328 +05:30 [DBG] Connection ID "18230571318976184659" disconnecting.
+2022-10-26 11:36:23.767 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim text/plain;charset=UTF-8 231
+2022-10-26 11:36:23.768 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 11:36:23.768 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)' with route pattern 'HealthCare/SubmitClaim' is valid for the request path '/HealthCare/SubmitClaim'
+2022-10-26 11:36:23.768 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:36:23.768 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 11:36:23.768 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:36:23.768 +05:30 [INF] Route matched with {action = "SubmitClaim", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SubmitClaim(HcmClaim.Dto.ClaimDto) on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 11:36:23.768 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 11:36:23.768 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 11:36:23.768 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 11:36:23.768 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 11:36:23.768 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 11:36:23.768 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 11:36:23.770 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 11:36:23.770 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 11:36:23.770 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' using the name '' in request data ...
+2022-10-26 11:36:23.771 +05:30 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'text/plain;charset=UTF-8'.
+2022-10-26 11:36:23.771 +05:30 [DBG] No input formatter was found to support the content type 'text/plain;charset=UTF-8' for use with the [FromBody] attribute.
+2022-10-26 11:36:23.771 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:36:23.771 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:36:23.771 +05:30 [DBG] Attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 11:36:23.771 +05:30 [DBG] Done attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:36:23.772 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter'.
+2022-10-26 11:36:23.772 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 11:36:23.772 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 11:36:23.772 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-10-26 11:36:23.772 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-10-26 11:36:23.772 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-10-26 11:36:23.772 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim) in 4.1988ms
+2022-10-26 11:36:23.772 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:36:23.772 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim text/plain;charset=UTF-8 231 - 415 - application/problem+json;+charset=utf-8 5.0765ms
+2022-10-26 11:37:01.731 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim text/plain;charset=UTF-8 231
+2022-10-26 11:37:01.732 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 11:37:01.732 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)' with route pattern 'HealthCare/SubmitClaim' is valid for the request path '/HealthCare/SubmitClaim'
+2022-10-26 11:37:01.732 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:37:01.732 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 11:37:01.732 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:37:01.732 +05:30 [INF] Route matched with {action = "SubmitClaim", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SubmitClaim(HcmClaim.Dto.ClaimDto) on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 11:37:01.732 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 11:37:01.732 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 11:37:01.732 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 11:37:01.732 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 11:37:01.732 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 11:37:01.732 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 11:37:01.732 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 11:37:01.732 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 11:37:01.733 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' using the name '' in request data ...
+2022-10-26 11:37:01.733 +05:30 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'text/plain;charset=UTF-8'.
+2022-10-26 11:37:01.733 +05:30 [DBG] No input formatter was found to support the content type 'text/plain;charset=UTF-8' for use with the [FromBody] attribute.
+2022-10-26 11:37:01.733 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:37:01.733 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:37:01.733 +05:30 [DBG] Attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 11:37:01.733 +05:30 [DBG] Done attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:37:01.733 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter'.
+2022-10-26 11:37:01.733 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 11:37:01.733 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 11:37:01.733 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-10-26 11:37:01.733 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-10-26 11:37:01.733 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-10-26 11:37:01.734 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim) in 1.8008ms
+2022-10-26 11:37:01.734 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:37:01.734 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim text/plain;charset=UTF-8 231 - 415 - application/problem+json;+charset=utf-8 2.8909ms
+2022-10-26 11:40:04.996 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim text/plain;charset=UTF-8 231
+2022-10-26 11:40:04.996 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 11:40:04.996 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)' with route pattern 'HealthCare/SubmitClaim' is valid for the request path '/HealthCare/SubmitClaim'
+2022-10-26 11:40:04.996 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:40:04.996 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 11:40:04.996 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:40:04.996 +05:30 [INF] Route matched with {action = "SubmitClaim", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SubmitClaim(HcmClaim.Dto.ClaimDto) on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 11:40:04.996 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 11:40:04.996 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 11:40:04.996 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 11:40:04.996 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 11:40:04.996 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 11:40:04.996 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 11:40:04.997 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 11:40:04.997 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 11:40:04.997 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' using the name '' in request data ...
+2022-10-26 11:40:04.997 +05:30 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'text/plain;charset=UTF-8'.
+2022-10-26 11:40:04.997 +05:30 [DBG] No input formatter was found to support the content type 'text/plain;charset=UTF-8' for use with the [FromBody] attribute.
+2022-10-26 11:40:04.997 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:40:04.997 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:40:04.997 +05:30 [DBG] Attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 11:40:04.997 +05:30 [DBG] Done attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 11:40:04.997 +05:30 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter'.
+2022-10-26 11:40:04.997 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 11:40:04.997 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 11:40:04.997 +05:30 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-10-26 11:40:04.998 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-10-26 11:40:04.998 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-10-26 11:40:04.998 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim) in 1.6752ms
+2022-10-26 11:40:04.998 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 11:40:04.998 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim text/plain;charset=UTF-8 231 - 415 - application/problem+json;+charset=utf-8 2.6548ms
+2022-10-26 12:20:02.909 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - -
+2022-10-26 12:20:02.909 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 12:20:02.909 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2022-10-26 12:20:02.909 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 12:20:02.910 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2022-10-26 12:20:02.910 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2022-10-26 12:20:02.911 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - - - 405 - - 2.2027ms
+2022-10-26 12:20:42.320 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - -
+2022-10-26 12:20:42.320 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 12:20:42.320 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2022-10-26 12:20:42.320 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 12:20:42.320 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2022-10-26 12:20:42.320 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2022-10-26 12:20:42.321 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - - - 405 - - 1.2058ms
+2022-10-26 12:54:19.667 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:44316/HealthCare/GetClaims - -
+2022-10-26 12:54:19.669 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/GetClaims'
+2022-10-26 12:54:19.669 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)' with route pattern 'HealthCare/GetClaims' is valid for the request path '/HealthCare/GetClaims'
+2022-10-26 12:54:19.669 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 12:54:19.670 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 12:54:19.671 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 12:54:19.681 +05:30 [INF] Route matched with {action = "getClaimsList", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[HcmClaim.Modals.Claim] getClaimsList() on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 12:54:19.681 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 12:54:19.681 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 12:54:19.681 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 12:54:19.681 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 12:54:19.681 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 12:54:19.681 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 12:54:19.683 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 12:54:19.685 +05:30 [INF] Getting claims from database
+2022-10-26 12:54:19.762 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-26 12:54:19.823 +05:30 [DBG] Compiling query expression: 
+'DbSet<Claim>()'
+2022-10-26 12:54:19.995 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Claim.ClaimId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Claim.ClaimAmount (int) Required, 1], [Property: Claim.ClaimDate (DateTime) Required, 2], [Property: Claim.ClaimType (string) Required, 3], [Property: Claim.MemberId (int) Required, 4], [Property: Claim.Remarks (string) Required MaxLength(1000), 5] }
+        SELECT c.ClaimId, c.ClaimAmount, c.ClaimDate, c.ClaimType, c.MemberId, c.Remarks
+        FROM Claims AS c), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    HcmClaim.Modals.ToDoContext, 
+    False, 
+    False, 
+    True
+)'
+2022-10-26 12:54:20.023 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-26 12:54:20.023 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-26 12:54:20.023 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 12:54:20.032 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 12:54:20.032 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-26 12:54:20.037 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-26 12:54:20.046 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 12:54:20.046 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 12:54:20.046 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 12:54:20.047 +05:30 [DBG] A data reader was disposed.
+2022-10-26 12:54:20.047 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 12:54:20.047 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 12:54:20.048 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 12:54:20.048 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 12:54:20.048 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-26 12:54:20.048 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-26 12:54:20.048 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-26 12:54:20.048 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HcmClaim.Modals.Claim, HcmClaim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-26 12:54:20.050 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim) in 368.6406ms
+2022-10-26 12:54:20.050 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 12:54:20.050 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-26 12:54:20.050 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:44316/HealthCare/GetClaims - - - 200 - application/json;+charset=utf-8 383.7694ms
+2022-10-26 13:25:36.926 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - -
+2022-10-26 13:25:36.926 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 13:25:36.926 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2022-10-26 13:25:36.926 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 13:25:36.926 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2022-10-26 13:25:36.926 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2022-10-26 13:25:36.926 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - - - 405 - - 0.7500ms
+2022-10-26 13:30:07.325 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - -
+2022-10-26 13:30:07.325 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 13:30:07.325 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2022-10-26 13:30:07.325 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 13:30:07.325 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2022-10-26 13:30:07.325 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2022-10-26 13:30:07.326 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - - - 405 - - 0.7552ms
+2022-10-26 13:35:16.256 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - -
+2022-10-26 13:35:16.256 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 13:35:16.256 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2022-10-26 13:35:16.256 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 13:35:16.256 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2022-10-26 13:35:16.256 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2022-10-26 13:35:16.256 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - - - 405 - - 0.6306ms
+2022-10-26 14:01:27.084 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-10-26 14:01:27.228 +05:30 [DBG] Hosting starting
+2022-10-26 14:01:27.283 +05:30 [DBG] Loaded hosting startup assembly HcmClaim
+2022-10-26 14:01:27.283 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-26 14:01:27.283 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-26 14:01:27.283 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-26 14:01:27.283 +05:30 [INF] Hosting environment: Development
+2022-10-26 14:01:27.283 +05:30 [INF] Content root path: C:\HCM\HcmClaim\HcmClaim\
+2022-10-26 14:01:27.283 +05:30 [DBG] Hosting started
+2022-10-26 14:01:27.306 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/index.html - -
+2022-10-26 14:01:27.339 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-10-26 14:01:27.363 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-10-26 14:01:27.363 +05:30 [DBG] Request did not match any endpoints
+2022-10-26 14:01:27.450 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-10-26 14:01:27.582 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2022-10-26 14:01:27.584 +05:30 [DBG] Connection ID "17365880190521049124" disconnecting.
+2022-10-26 14:01:27.585 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/index.html - - - 200 - text/html;charset=utf-8 282.0841ms
+2022-10-26 14:01:27.596 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/_vs/browserLink - -
+2022-10-26 14:01:27.596 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/_framework/aspnetcore-browser-refresh.js - -
+2022-10-26 14:01:27.601 +05:30 [DBG] Connection ID "18374686524231909753" disconnecting.
+2022-10-26 14:01:27.601 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 4.2836ms
+2022-10-26 14:01:27.695 +05:30 [DBG] Connection ID "18302628930193981818" disconnecting.
+2022-10-26 14:01:27.696 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 99.8305ms
+2022-10-26 14:01:28.070 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/v1/swagger.json - -
+2022-10-26 14:01:28.070 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-10-26 14:01:28.070 +05:30 [DBG] Request did not match any endpoints
+2022-10-26 14:01:28.175 +05:30 [DBG] Connection ID "17870283327311708247" disconnecting.
+2022-10-26 14:01:28.175 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 105.7793ms
+2022-10-26 14:02:27.049 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - -
+2022-10-26 14:02:27.055 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:02:27.056 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2022-10-26 14:02:27.057 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:02:27.058 +05:30 [DBG] The request has an origin header: 'http://localhost:50866'.
+2022-10-26 14:02:27.058 +05:30 [INF] CORS policy execution successful.
+2022-10-26 14:02:27.058 +05:30 [DBG] The request is a preflight request.
+2022-10-26 14:02:27.060 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - - - 204 - - 10.4742ms
+2022-10-26 14:02:27.062 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim application/json 77
+2022-10-26 14:02:27.063 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:02:27.066 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)' with route pattern 'HealthCare/SubmitClaim' is valid for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:02:27.067 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:02:27.067 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:02:27.067 +05:30 [DBG] The request has an origin header: 'http://localhost:50866'.
+2022-10-26 14:02:27.067 +05:30 [INF] CORS policy execution successful.
+2022-10-26 14:02:27.069 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:02:27.088 +05:30 [INF] Route matched with {action = "SubmitClaim", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SubmitClaim(HcmClaim.Dto.ClaimDto) on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 14:02:27.091 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 14:02:27.091 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 14:02:27.091 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 14:02:27.091 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 14:02:27.091 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 14:02:27.092 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:02:27.192 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-26 14:02:27.282 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:02:27.286 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 14:02:27.288 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' using the name '' in request data ...
+2022-10-26 14:02:27.288 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-26 14:02:27.295 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'HcmClaim.Dto.ClaimDto'
+2022-10-26 14:02:27.296 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:02:27.296 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:02:27.296 +05:30 [DBG] Attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 14:02:27.303 +05:30 [DBG] Done attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:02:27.324 +05:30 [INF] Adding claim to database
+2022-10-26 14:02:27.827 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-26 14:02:27.859 +05:30 [DBG] 'ToDoContext' generated a temporary value for the property 'ClaimId.Claim'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:02:27.904 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:02:27.906 +05:30 [DBG] SaveChanges starting for 'ToDoContext'.
+2022-10-26 14:02:27.910 +05:30 [DBG] DetectChanges starting for 'ToDoContext'.
+2022-10-26 14:02:27.919 +05:30 [DBG] DetectChanges completed for 'ToDoContext'.
+2022-10-26 14:02:27.957 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:02:28.159 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:02:28.161 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-10-26 14:02:28.171 +05:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2022-10-26 14:02:28.215 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-26 14:02:28.221 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2022-10-26 14:02:28.239 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 1000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Claims] ([ClaimAmount], [ClaimDate], [ClaimType], [MemberId], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [ClaimId]
+FROM [Claims]
+WHERE @@ROWCOUNT = 1 AND [ClaimId] = scope_identity();
+2022-10-26 14:02:28.284 +05:30 [INF] Executed DbCommand (50ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 1000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Claims] ([ClaimAmount], [ClaimDate], [ClaimType], [MemberId], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [ClaimId]
+FROM [Claims]
+WHERE @@ROWCOUNT = 1 AND [ClaimId] = scope_identity();
+2022-10-26 14:02:28.305 +05:30 [DBG] The foreign key property 'Claim.ClaimId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-10-26 14:02:28.314 +05:30 [DBG] A data reader was disposed.
+2022-10-26 14:02:28.317 +05:30 [DBG] Committing transaction.
+2022-10-26 14:02:28.320 +05:30 [DBG] Committed transaction.
+2022-10-26 14:02:28.321 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:02:28.326 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:02:28.327 +05:30 [DBG] Disposing transaction.
+2022-10-26 14:02:28.339 +05:30 [DBG] An entity of type 'Claim' tracked by 'ToDoContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:02:28.340 +05:30 [DBG] SaveChanges completed for 'ToDoContext' with 1 entities written to the database.
+2022-10-26 14:02:28.341 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 14:02:28.343 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 14:02:28.343 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-26 14:02:28.343 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-26 14:02:28.343 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-26 14:02:28.343 +05:30 [INF] Executing CreatedResult, writing value of type 'HcmClaim.Modals.Claim'.
+2022-10-26 14:02:28.354 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim) in 1257.4057ms
+2022-10-26 14:02:28.354 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:02:28.355 +05:30 [DBG] Connection ID "17870283327311708249" disconnecting.
+2022-10-26 14:02:28.356 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-26 14:02:28.358 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim application/json 77 - 201 - application/json;+charset=utf-8 1295.9870ms
+2022-10-26 14:03:27.274 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - -
+2022-10-26 14:03:27.275 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:03:27.275 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2022-10-26 14:03:27.275 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:03:27.275 +05:30 [DBG] The request has an origin header: 'http://localhost:50866'.
+2022-10-26 14:03:27.275 +05:30 [INF] CORS policy execution successful.
+2022-10-26 14:03:27.275 +05:30 [DBG] The request is a preflight request.
+2022-10-26 14:03:27.276 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - - - 204 - - 1.2258ms
+2022-10-26 14:03:27.277 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim application/json 77
+2022-10-26 14:03:27.277 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:03:27.277 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)' with route pattern 'HealthCare/SubmitClaim' is valid for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:03:27.277 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:03:27.277 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:03:27.277 +05:30 [DBG] The request has an origin header: 'http://localhost:50866'.
+2022-10-26 14:03:27.277 +05:30 [INF] CORS policy execution successful.
+2022-10-26 14:03:27.277 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:03:27.278 +05:30 [INF] Route matched with {action = "SubmitClaim", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SubmitClaim(HcmClaim.Dto.ClaimDto) on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 14:03:27.278 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 14:03:27.278 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 14:03:27.278 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 14:03:27.278 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 14:03:27.278 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 14:03:27.278 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:03:27.279 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:03:27.279 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 14:03:27.279 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' using the name '' in request data ...
+2022-10-26 14:03:27.279 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-26 14:03:27.280 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'HcmClaim.Dto.ClaimDto'
+2022-10-26 14:03:27.280 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:03:27.280 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:03:27.280 +05:30 [DBG] Attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 14:03:27.280 +05:30 [DBG] Done attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:03:27.280 +05:30 [INF] Adding claim to database
+2022-10-26 14:03:27.314 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-26 14:03:27.314 +05:30 [DBG] 'ToDoContext' generated a temporary value for the property 'ClaimId.Claim'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:27.314 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:27.314 +05:30 [DBG] SaveChanges starting for 'ToDoContext'.
+2022-10-26 14:03:27.314 +05:30 [DBG] DetectChanges starting for 'ToDoContext'.
+2022-10-26 14:03:27.314 +05:30 [DBG] DetectChanges completed for 'ToDoContext'.
+2022-10-26 14:03:27.316 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:27.317 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:27.317 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-10-26 14:03:27.318 +05:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2022-10-26 14:03:27.318 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-26 14:03:27.318 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-26 14:03:27.318 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 1000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Claims] ([ClaimAmount], [ClaimDate], [ClaimType], [MemberId], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [ClaimId]
+FROM [Claims]
+WHERE @@ROWCOUNT = 1 AND [ClaimId] = scope_identity();
+2022-10-26 14:03:27.320 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 1000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Claims] ([ClaimAmount], [ClaimDate], [ClaimType], [MemberId], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [ClaimId]
+FROM [Claims]
+WHERE @@ROWCOUNT = 1 AND [ClaimId] = scope_identity();
+2022-10-26 14:03:27.321 +05:30 [DBG] The foreign key property 'Claim.ClaimId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-10-26 14:03:27.321 +05:30 [DBG] A data reader was disposed.
+2022-10-26 14:03:27.321 +05:30 [DBG] Committing transaction.
+2022-10-26 14:03:27.322 +05:30 [DBG] Committed transaction.
+2022-10-26 14:03:27.322 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:27.322 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:27.322 +05:30 [DBG] Disposing transaction.
+2022-10-26 14:03:27.322 +05:30 [DBG] An entity of type 'Claim' tracked by 'ToDoContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:27.322 +05:30 [DBG] SaveChanges completed for 'ToDoContext' with 1 entities written to the database.
+2022-10-26 14:03:27.322 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 14:03:27.322 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 14:03:27.322 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-26 14:03:27.322 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-26 14:03:27.322 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-26 14:03:27.322 +05:30 [INF] Executing CreatedResult, writing value of type 'HcmClaim.Modals.Claim'.
+2022-10-26 14:03:27.323 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim) in 44.8262ms
+2022-10-26 14:03:27.323 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:03:27.323 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-26 14:03:27.323 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim application/json 77 - 201 - application/json;+charset=utf-8 45.8963ms
+2022-10-26 14:03:27.323 +05:30 [DBG] Connection ID "18086456139490263485" disconnecting.
+2022-10-26 14:03:47.177 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:44316/HealthCare/GetClaims - -
+2022-10-26 14:03:47.178 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/GetClaims'
+2022-10-26 14:03:47.178 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)' with route pattern 'HealthCare/GetClaims' is valid for the request path '/HealthCare/GetClaims'
+2022-10-26 14:03:47.178 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 14:03:47.178 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:03:47.178 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 14:03:47.179 +05:30 [INF] Route matched with {action = "getClaimsList", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[HcmClaim.Modals.Claim] getClaimsList() on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 14:03:47.179 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 14:03:47.179 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 14:03:47.179 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 14:03:47.179 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 14:03:47.179 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 14:03:47.179 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:03:47.181 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:03:47.181 +05:30 [INF] Getting claims from database
+2022-10-26 14:03:47.189 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-26 14:03:47.218 +05:30 [DBG] Compiling query expression: 
+'DbSet<Claim>()'
+2022-10-26 14:03:47.338 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Claim.ClaimId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Claim.ClaimAmount (int) Required, 1], [Property: Claim.ClaimDate (DateTime) Required, 2], [Property: Claim.ClaimType (string) Required, 3], [Property: Claim.MemberId (int) Required, 4], [Property: Claim.Remarks (string) Required MaxLength(1000), 5] }
+        SELECT c.ClaimId, c.ClaimAmount, c.ClaimDate, c.ClaimType, c.MemberId, c.Remarks
+        FROM Claims AS c), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    HcmClaim.Modals.ToDoContext, 
+    False, 
+    False, 
+    True
+)'
+2022-10-26 14:03:47.362 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-26 14:03:47.363 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-26 14:03:47.363 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:47.363 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:47.363 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-26 14:03:47.365 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-26 14:03:47.370 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:47.370 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:47.370 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:47.370 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:47.370 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:47.371 +05:30 [DBG] A data reader was disposed.
+2022-10-26 14:03:47.371 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:47.371 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:47.371 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 14:03:47.371 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 14:03:47.372 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-26 14:03:47.372 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-26 14:03:47.372 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-26 14:03:47.372 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HcmClaim.Modals.Claim, HcmClaim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-26 14:03:47.372 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim) in 193.3536ms
+2022-10-26 14:03:47.372 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 14:03:47.373 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-26 14:03:47.373 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:44316/HealthCare/GetClaims - - - 200 - application/json;+charset=utf-8 195.3139ms
+2022-10-26 14:03:55.892 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:44316/HealthCare/GetClaims - -
+2022-10-26 14:03:55.892 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/GetClaims'
+2022-10-26 14:03:55.892 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)' with route pattern 'HealthCare/GetClaims' is valid for the request path '/HealthCare/GetClaims'
+2022-10-26 14:03:55.893 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 14:03:55.893 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:03:55.893 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 14:03:55.893 +05:30 [INF] Route matched with {action = "getClaimsList", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[HcmClaim.Modals.Claim] getClaimsList() on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 14:03:55.893 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 14:03:55.893 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 14:03:55.893 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 14:03:55.893 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 14:03:55.893 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 14:03:55.893 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:03:55.893 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:03:55.893 +05:30 [INF] Getting claims from database
+2022-10-26 14:03:55.894 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-26 14:03:55.894 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-26 14:03:55.894 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-26 14:03:55.894 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:55.894 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:55.894 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-26 14:03:55.895 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-26 14:03:55.895 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:55.895 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:55.895 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:55.895 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:55.895 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:55.895 +05:30 [DBG] A data reader was disposed.
+2022-10-26 14:03:55.895 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:55.895 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:55.895 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 14:03:55.895 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 14:03:55.895 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-26 14:03:55.895 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-26 14:03:55.895 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-26 14:03:55.895 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HcmClaim.Modals.Claim, HcmClaim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-26 14:03:55.896 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim) in 2.8229ms
+2022-10-26 14:03:55.896 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 14:03:55.896 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-26 14:03:55.896 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:44316/HealthCare/GetClaims - - - 200 - application/json;+charset=utf-8 3.7530ms
+2022-10-26 14:03:59.960 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:44316/HealthCare/GetClaims - -
+2022-10-26 14:03:59.960 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/GetClaims'
+2022-10-26 14:03:59.960 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)' with route pattern 'HealthCare/GetClaims' is valid for the request path '/HealthCare/GetClaims'
+2022-10-26 14:03:59.960 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 14:03:59.960 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:03:59.960 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 14:03:59.960 +05:30 [INF] Route matched with {action = "getClaimsList", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[HcmClaim.Modals.Claim] getClaimsList() on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 14:03:59.960 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 14:03:59.960 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 14:03:59.960 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 14:03:59.960 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 14:03:59.960 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 14:03:59.960 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:03:59.961 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:03:59.961 +05:30 [INF] Getting claims from database
+2022-10-26 14:03:59.961 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-26 14:03:59.961 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-26 14:03:59.961 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-26 14:03:59.961 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:59.961 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:59.961 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-26 14:03:59.962 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-26 14:03:59.962 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:59.962 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:59.962 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:59.962 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:59.962 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:03:59.962 +05:30 [DBG] A data reader was disposed.
+2022-10-26 14:03:59.962 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:59.962 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:03:59.962 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 14:03:59.962 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 14:03:59.962 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-26 14:03:59.962 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-26 14:03:59.962 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-26 14:03:59.962 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HcmClaim.Modals.Claim, HcmClaim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-26 14:03:59.963 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim) in 2.6209ms
+2022-10-26 14:03:59.963 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-26 14:03:59.963 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-26 14:03:59.963 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:44316/HealthCare/GetClaims - - - 200 - application/json;+charset=utf-8 3.5062ms
+2022-10-26 14:07:10.618 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - -
+2022-10-26 14:07:10.618 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:07:10.618 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2022-10-26 14:07:10.618 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:07:10.618 +05:30 [DBG] The request has an origin header: 'http://localhost:50866'.
+2022-10-26 14:07:10.618 +05:30 [INF] CORS policy execution successful.
+2022-10-26 14:07:10.618 +05:30 [DBG] The request is a preflight request.
+2022-10-26 14:07:10.619 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - - - 204 - - 0.6067ms
+2022-10-26 14:07:10.621 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim application/json 82
+2022-10-26 14:07:10.622 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:07:10.622 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)' with route pattern 'HealthCare/SubmitClaim' is valid for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:07:10.622 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:07:10.622 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:07:10.622 +05:30 [DBG] The request has an origin header: 'http://localhost:50866'.
+2022-10-26 14:07:10.622 +05:30 [INF] CORS policy execution successful.
+2022-10-26 14:07:10.622 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:07:10.622 +05:30 [INF] Route matched with {action = "SubmitClaim", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SubmitClaim(HcmClaim.Dto.ClaimDto) on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 14:07:10.622 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 14:07:10.622 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 14:07:10.622 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 14:07:10.622 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 14:07:10.623 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 14:07:10.623 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:07:10.623 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:07:10.623 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 14:07:10.623 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' using the name '' in request data ...
+2022-10-26 14:07:10.623 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-26 14:07:10.623 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'HcmClaim.Dto.ClaimDto'
+2022-10-26 14:07:10.624 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:07:10.624 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:07:10.624 +05:30 [DBG] Attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 14:07:10.624 +05:30 [DBG] Done attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:07:10.624 +05:30 [INF] Adding claim to database
+2022-10-26 14:07:10.624 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-26 14:07:10.625 +05:30 [DBG] 'ToDoContext' generated a temporary value for the property 'ClaimId.Claim'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:07:10.625 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:07:10.625 +05:30 [DBG] SaveChanges starting for 'ToDoContext'.
+2022-10-26 14:07:10.625 +05:30 [DBG] DetectChanges starting for 'ToDoContext'.
+2022-10-26 14:07:10.625 +05:30 [DBG] DetectChanges completed for 'ToDoContext'.
+2022-10-26 14:07:10.625 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:07:10.625 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:07:10.625 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-10-26 14:07:10.626 +05:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2022-10-26 14:07:10.626 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-26 14:07:10.626 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-26 14:07:10.626 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 1000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Claims] ([ClaimAmount], [ClaimDate], [ClaimType], [MemberId], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [ClaimId]
+FROM [Claims]
+WHERE @@ROWCOUNT = 1 AND [ClaimId] = scope_identity();
+2022-10-26 14:07:10.638 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 1000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Claims] ([ClaimAmount], [ClaimDate], [ClaimType], [MemberId], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [ClaimId]
+FROM [Claims]
+WHERE @@ROWCOUNT = 1 AND [ClaimId] = scope_identity();
+2022-10-26 14:07:10.638 +05:30 [DBG] The foreign key property 'Claim.ClaimId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-10-26 14:07:10.638 +05:30 [DBG] A data reader was disposed.
+2022-10-26 14:07:10.638 +05:30 [DBG] Committing transaction.
+2022-10-26 14:07:10.642 +05:30 [DBG] Committed transaction.
+2022-10-26 14:07:10.642 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:07:10.643 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:07:10.643 +05:30 [DBG] Disposing transaction.
+2022-10-26 14:07:10.643 +05:30 [DBG] An entity of type 'Claim' tracked by 'ToDoContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:07:10.643 +05:30 [DBG] SaveChanges completed for 'ToDoContext' with 1 entities written to the database.
+2022-10-26 14:07:10.643 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 14:07:10.643 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 14:07:10.643 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-26 14:07:10.643 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-26 14:07:10.643 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-26 14:07:10.643 +05:30 [INF] Executing CreatedResult, writing value of type 'HcmClaim.Modals.Claim'.
+2022-10-26 14:07:10.643 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim) in 20.7513ms
+2022-10-26 14:07:10.643 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:07:10.644 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-26 14:07:10.644 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim application/json 82 - 201 - application/json;+charset=utf-8 22.3220ms
+2022-10-26 14:12:36.149 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - -
+2022-10-26 14:12:36.149 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:12:36.149 +05:30 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2022-10-26 14:12:36.149 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:12:36.149 +05:30 [DBG] The request has an origin header: 'http://localhost:50866'.
+2022-10-26 14:12:36.149 +05:30 [INF] CORS policy execution successful.
+2022-10-26 14:12:36.149 +05:30 [DBG] The request is a preflight request.
+2022-10-26 14:12:36.149 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:44316/HealthCare/SubmitClaim - - - 204 - - 0.6639ms
+2022-10-26 14:12:36.151 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim application/json 79
+2022-10-26 14:12:36.151 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:12:36.151 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)' with route pattern 'HealthCare/SubmitClaim' is valid for the request path '/HealthCare/SubmitClaim'
+2022-10-26 14:12:36.151 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:12:36.151 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-26 14:12:36.151 +05:30 [DBG] The request has an origin header: 'http://localhost:50866'.
+2022-10-26 14:12:36.151 +05:30 [INF] CORS policy execution successful.
+2022-10-26 14:12:36.151 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:12:36.151 +05:30 [INF] Route matched with {action = "SubmitClaim", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult SubmitClaim(HcmClaim.Dto.ClaimDto) on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-26 14:12:36.151 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-26 14:12:36.151 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-26 14:12:36.151 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-26 14:12:36.151 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-26 14:12:36.151 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-26 14:12:36.151 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:12:36.151 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-26 14:12:36.151 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 14:12:36.152 +05:30 [DBG] Attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' using the name '' in request data ...
+2022-10-26 14:12:36.152 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-26 14:12:36.152 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'HcmClaim.Dto.ClaimDto'
+2022-10-26 14:12:36.152 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:12:36.152 +05:30 [DBG] Done attempting to bind parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:12:36.152 +05:30 [DBG] Attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto' ...
+2022-10-26 14:12:36.152 +05:30 [DBG] Done attempting to validate the bound parameter 'claimDto' of type 'HcmClaim.Dto.ClaimDto'.
+2022-10-26 14:12:36.152 +05:30 [INF] Adding claim to database
+2022-10-26 14:12:36.153 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-26 14:12:36.153 +05:30 [DBG] 'ToDoContext' generated a temporary value for the property 'ClaimId.Claim'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:12:36.153 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:12:36.153 +05:30 [DBG] SaveChanges starting for 'ToDoContext'.
+2022-10-26 14:12:36.153 +05:30 [DBG] DetectChanges starting for 'ToDoContext'.
+2022-10-26 14:12:36.153 +05:30 [DBG] DetectChanges completed for 'ToDoContext'.
+2022-10-26 14:12:36.153 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:12:36.157 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:12:36.157 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-10-26 14:12:36.157 +05:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2022-10-26 14:12:36.158 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-26 14:12:36.158 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-26 14:12:36.158 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 1000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Claims] ([ClaimAmount], [ClaimDate], [ClaimType], [MemberId], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [ClaimId]
+FROM [Claims]
+WHERE @@ROWCOUNT = 1 AND [ClaimId] = scope_identity();
+2022-10-26 14:12:36.161 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 1000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Claims] ([ClaimAmount], [ClaimDate], [ClaimType], [MemberId], [Remarks])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [ClaimId]
+FROM [Claims]
+WHERE @@ROWCOUNT = 1 AND [ClaimId] = scope_identity();
+2022-10-26 14:12:36.161 +05:30 [DBG] The foreign key property 'Claim.ClaimId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-10-26 14:12:36.161 +05:30 [DBG] A data reader was disposed.
+2022-10-26 14:12:36.161 +05:30 [DBG] Committing transaction.
+2022-10-26 14:12:36.162 +05:30 [DBG] Committed transaction.
+2022-10-26 14:12:36.162 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:12:36.162 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-26 14:12:36.162 +05:30 [DBG] Disposing transaction.
+2022-10-26 14:12:36.162 +05:30 [DBG] An entity of type 'Claim' tracked by 'ToDoContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-26 14:12:36.162 +05:30 [DBG] SaveChanges completed for 'ToDoContext' with 1 entities written to the database.
+2022-10-26 14:12:36.162 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-26 14:12:36.162 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-26 14:12:36.162 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-26 14:12:36.162 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-26 14:12:36.162 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-26 14:12:36.162 +05:30 [INF] Executing CreatedResult, writing value of type 'HcmClaim.Modals.Claim'.
+2022-10-26 14:12:36.163 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim) in 11.5128ms
+2022-10-26 14:12:36.163 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.SubmitClaim (HcmClaim)'
+2022-10-26 14:12:36.163 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-26 14:12:36.163 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44316/HealthCare/SubmitClaim application/json 79 - 201 - application/json;+charset=utf-8 12.2787ms

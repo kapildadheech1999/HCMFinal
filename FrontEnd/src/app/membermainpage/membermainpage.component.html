@@ -1,0 +1,19 @@
+<div class="row" style="width:90%">
+    <div class="member-content">
+        <h6 class="card-title " style="background:rgba(7, 135, 194, 0.993);color:white;padding:10px; ">Member Details</h6>
+        <p class="card-text ">
+            <div class="d-flex flex-column ">
+                <div class="p-2 member-id"><b>Member Id</b>: {{member.memberId}}</div>
+                <div class="p-2 "><b>First Name</b>: {{member.firstName}}</div>
+                <div class="p-2 "><b>Last Name</b>: {{member.lastName}}</div>
+                <div class="p-2 "><b>UserName</b>: {{member.userName}}</div>
+                <div class="p-2 "><b>Address</b>: {{member.address}}</div>
+                <div class="p-2 "><b>State</b>: {{member.state}}</div>
+                <div class="p-2 "><b>City</b>: {{member.city}}</div>
+                <div class="p-2 "><b>Email</b>: {{member.email}}</div>
+                <div class="p-2 "><b>Date Of Birth</b>: {{member.dateOfBirth | date:'longDate'}}</div>
+                <div class="p-2 "><b>Physician Name</b>: {{member.physicianName}}</div>
+            </div><br>
+            <a [routerLink]="['/submitclaim', member.memberId]" class="btn btn-success btn-lg">Submit Claim</a>
+    </div>
+</div>

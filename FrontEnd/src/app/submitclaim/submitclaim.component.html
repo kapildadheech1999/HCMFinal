@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="alert alert-danger" id="pageError" *ngIf="pageError!=''">{{pageError}}</div>
+    <div class="form-content border border-dark">
+        <h4>Submit Claim</h4><br>
+        <h6 class="mb-5 text-center">Member Id: {{id}}</h6>
+        <form [formGroup]="submitClaimForm" (ngSubmit)="onSubmit()">
+             <div class="mb-3">
+                <label for="claimtype" class="form-label">Claim Type</label>
+                <input type="text" formControlName="type" class="form-control" id="claimtype">
+                <div *ngIf="type?.invalid && (type?.dirty || type?.touched)" class="text-form text-danger">
+                    <div *ngIf="type?.errors?.['required']">
+                        Type is required.
+                    </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="claimamount" class="form-label">Claim Amount</label>
+                <input type="number" formControlName="amount" class="form-control" id="claimamount">
+                <div *ngIf="amount?.invalid && (amount?.dirty || amount?.touched)" class="text-form text-danger">
+                    <div *ngIf="amount?.errors?.['required']">
+                        Amount is required.
+                    </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="claimremarks" class="form-label">Claim Remarks</label>
+                <textarea class="form-control" formControlName="remarks" id="claimremarks" rows="3"></textarea>
+                <div *ngIf="remarks?.invalid && (remarks?.dirty || remarks?.touched)" class="text-form text-danger">
+                    <div *ngIf="remarks?.errors?.['required']">
+                        Remarks is required.
+                    </div>
+                </div>
+              </div>
+            <button class="btn btn-primary" id="button" [disabled]="submitClaimForm.invalid">Submit Claim</button>
+        </form>
+    </div>
+</div>

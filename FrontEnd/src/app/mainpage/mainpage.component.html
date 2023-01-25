@@ -1,0 +1,83 @@
+<div class="container-fluid">
+    <div class="alert alert-danger" id="pageError" *ngIf="pageError != '' && showError">
+      {{ pageError }}
+      <button class="material-icons" style="float: right" (click)="closebar()">
+        close
+      </button>
+    </div>
+    <div class="row">
+      <!--left pane-->
+      <div class="col-lg-3 col-md-3 col-sm-12" id="left-pane">
+          <h3>Member Search</h3>
+          <br><br>
+          <select class="form-control" (change)="onPhysicianChange()" #physician>
+            <option selected="true">Search by physician</option>
+            <option>John</option>
+            <option>Hari</option>
+            <option>Mittal</option>
+            <option>Patrick</option>
+            <option>Mark</option>
+            <option>Jessica</option>
+            <option>Mary</option>
+            <option selected="false">Stacy</option>
+          </select>
+  
+        <!-- filter by claim id-->
+       <div class="input-group">
+          <input type="number" class="form-control" placeholder="Claim id" id="claimid" #claimid/>
+          <button class="btn btn-outline-primary" id="claimbtn" (click)="getMemberByClaimId()">Serach by claim id</button>
+       </div>
+  
+        <!-- filter by Member id-->
+        <div class="input-group">
+          <input type="number" class="form-control" placeholder="Search by MemberId" id="memberid" #memberid/>
+          <div class="input-group-append">
+            <button class="btn btn-outline-primary" id="memberbtn" (click)="byMemberId()">search</button>
+          </div>
+        </div>
+      <!-- filter by first name and last name-->
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="First Name" id="firstname" #firstname/>
+          <input type="text" class="form-control" placeholder="Last Name" id="lastname" #lastname/>
+          <div class="input-group-append">
+            <button class="btn btn-outline-primary" id="namebtn" (click)="getMemberByFirstAndLastName()">search</button>
+          </div>
+        </div>
+      </div>
+  
+      <!--right pane-->
+      <div class="col-lg-9 col-md-9 col-sm-12" id="right-pane " style="padding-top: 20px">
+        <!-- Members-->
+        <div class="row">
+          <div class="col-6">
+              <h3>Member List</h3>
+          </div>
+          <div class="col-6 text-end">
+             <button class="btn btn-primary text-end" routerLink="/addmember"><i class="bi bi-plus-circle"></i>&nbsp;Add Member</button>
+          </div>
+        </div>
+        <br><br>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Member Id</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Physician Name</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let member of members">
+            <tr>
+              <td>{{ member.memberId }}</td>
+              <td>{{ member.firstName }}</td>
+              <td>{{ member.lastName }}</td>
+              <td>{{ member.physicianName }}</td>
+              <td><a [routerLink]="['/submitclaim',member.memberId]" class="btn btn-primary">Submit Claim</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

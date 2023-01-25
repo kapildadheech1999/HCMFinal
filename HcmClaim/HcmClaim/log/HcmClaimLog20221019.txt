@@ -1,0 +1,221 @@
+2022-10-19 14:24:52.614 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-10-19 14:24:52.699 +05:30 [DBG] Hosting starting
+2022-10-19 14:24:52.744 +05:30 [DBG] Loaded hosting startup assembly HcmClaim
+2022-10-19 14:24:52.744 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-19 14:24:52.744 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-19 14:24:52.744 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-19 14:24:52.744 +05:30 [INF] Hosting environment: Development
+2022-10-19 14:24:52.744 +05:30 [INF] Content root path: C:\HCM\HcmClaim\HcmClaim\
+2022-10-19 14:24:52.744 +05:30 [DBG] Hosting started
+2022-10-19 14:24:52.766 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/index.html - -
+2022-10-19 14:24:52.815 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-10-19 14:24:52.831 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-10-19 14:24:52.831 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 14:24:52.911 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-10-19 14:24:53.572 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2022-10-19 14:24:53.574 +05:30 [DBG] Connection ID "18374686524231909623" disconnecting.
+2022-10-19 14:24:53.574 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/index.html - - - 200 - text/html;charset=utf-8 811.3339ms
+2022-10-19 14:24:53.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/_framework/aspnetcore-browser-refresh.js - -
+2022-10-19 14:24:53.591 +05:30 [DBG] Connection ID "18230571327566119019" disconnecting.
+2022-10-19 14:24:53.591 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 6.7742ms
+2022-10-19 14:24:53.604 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/_vs/browserLink - -
+2022-10-19 14:24:53.666 +05:30 [DBG] Connection ID "17942340934234538692" disconnecting.
+2022-10-19 14:24:53.666 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 62.5252ms
+2022-10-19 14:24:53.832 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/v1/swagger.json - -
+2022-10-19 14:24:53.833 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-10-19 14:24:53.833 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 14:24:53.934 +05:30 [DBG] Connection ID "18230571297501347900" disconnecting.
+2022-10-19 14:24:53.934 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.3441ms
+2022-10-19 14:24:54.045 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/favicon-32x32.png - -
+2022-10-19 14:24:54.045 +05:30 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2022-10-19 14:24:54.046 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 14:24:54.056 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-10-19 14:24:54.057 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/favicon-32x32.png - - - 200 628 image/png 11.4169ms
+2022-10-19 14:25:07.068 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/HealthCare/GetClaimByClaimId/1 - -
+2022-10-19 14:25:07.073 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/GetClaimByClaimId/1'
+2022-10-19 14:25:07.077 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.GetClaimById (HcmClaim)' with route pattern 'HealthCare/GetClaimByClaimId/{id}' is valid for the request path '/HealthCare/GetClaimByClaimId/1'
+2022-10-19 14:25:07.078 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.GetClaimById (HcmClaim)'
+2022-10-19 14:25:07.078 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-19 14:25:07.080 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.GetClaimById (HcmClaim)'
+2022-10-19 14:25:07.102 +05:30 [INF] Route matched with {action = "GetClaimById", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[HcmClaim.Modals.Claim] GetClaimById(Int32) on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-19 14:25:07.103 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-19 14:25:07.103 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-19 14:25:07.103 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-19 14:25:07.103 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-19 14:25:07.103 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-19 14:25:07.104 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-19 14:25:07.228 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-19 14:25:07.320 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-19 14:25:07.323 +05:30 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2022-10-19 14:25:07.325 +05:30 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2022-10-19 14:25:07.326 +05:30 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-10-19 14:25:07.326 +05:30 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-10-19 14:25:07.326 +05:30 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2022-10-19 14:25:07.328 +05:30 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2022-10-19 14:25:07.827 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-19 14:25:07.875 +05:30 [DBG] Compiling query expression: 
+'DbSet<Claim>()'
+2022-10-19 14:25:08.011 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Claim.ClaimId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Claim.ClaimAmount (int) Required, 1], [Property: Claim.ClaimDate (DateTime) Required, 2], [Property: Claim.ClaimType (string) Required, 3], [Property: Claim.MemberId (int) Required, 4], [Property: Claim.Remarks (string) Required MaxLength(1000), 5] }
+        SELECT c.ClaimId, c.ClaimAmount, c.ClaimDate, c.ClaimType, c.MemberId, c.Remarks
+        FROM Claims AS c), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    HcmClaim.Modals.ToDoContext, 
+    False, 
+    False, 
+    True
+)'
+2022-10-19 14:25:08.039 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-19 14:25:08.070 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (29ms).
+2022-10-19 14:25:08.074 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-19 14:25:08.325 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-19 14:25:08.333 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-19 14:25:08.358 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-19 14:25:08.386 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 14:25:08.411 +05:30 [DBG] A data reader was disposed.
+2022-10-19 14:25:08.413 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-19 14:25:08.417 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-19 14:25:08.418 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-19 14:25:08.421 +05:30 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2022-10-19 14:25:08.421 +05:30 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2022-10-19 14:25:08.421 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-19 14:25:08.421 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-19 14:25:08.421 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-19 14:25:08.422 +05:30 [INF] Executing OkObjectResult, writing value of type 'HcmClaim.Modals.Claim'.
+2022-10-19 14:25:08.431 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.GetClaimById (HcmClaim) in 1323.2949ms
+2022-10-19 14:25:08.431 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.GetClaimById (HcmClaim)'
+2022-10-19 14:25:08.431 +05:30 [DBG] Connection ID "18302628908719145477" disconnecting.
+2022-10-19 14:25:08.433 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-19 14:25:08.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/HealthCare/GetClaimByClaimId/1 - - - 200 - application/json;+charset=utf-8 1367.2951ms
+2022-10-19 14:28:01.756 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-10-19 14:28:01.855 +05:30 [DBG] Hosting starting
+2022-10-19 14:28:01.890 +05:30 [DBG] Loaded hosting startup assembly HcmClaim
+2022-10-19 14:28:01.890 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-19 14:28:01.890 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-19 14:28:01.890 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-19 14:28:01.890 +05:30 [INF] Hosting environment: Development
+2022-10-19 14:28:01.890 +05:30 [INF] Content root path: C:\HCM\HcmClaim\HcmClaim\
+2022-10-19 14:28:01.890 +05:30 [DBG] Hosting started
+2022-10-19 14:28:01.908 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/index.html - -
+2022-10-19 14:28:01.936 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-10-19 14:28:01.954 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-10-19 14:28:01.954 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 14:28:02.026 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-10-19 14:28:02.123 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2022-10-19 14:28:02.125 +05:30 [DBG] Connection ID "18302628913014112381" disconnecting.
+2022-10-19 14:28:02.126 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/index.html - - - 200 - text/html;charset=utf-8 220.0657ms
+2022-10-19 14:28:02.129 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/_vs/browserLink - -
+2022-10-19 14:28:02.129 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/_framework/aspnetcore-browser-refresh.js - -
+2022-10-19 14:28:02.132 +05:30 [DBG] Connection ID "17726168165005656133" disconnecting.
+2022-10-19 14:28:02.132 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 3.3962ms
+2022-10-19 14:28:02.164 +05:30 [DBG] Connection ID "18014398519682531517" disconnecting.
+2022-10-19 14:28:02.164 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.4340ms
+2022-10-19 14:28:02.351 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/v1/swagger.json - -
+2022-10-19 14:28:02.353 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-10-19 14:28:02.353 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 14:28:02.441 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.3586ms
+2022-10-19 14:28:02.442 +05:30 [DBG] Connection ID "18374686485577203919" disconnecting.
+2022-10-19 14:29:48.942 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-10-19 14:29:49.028 +05:30 [DBG] Hosting starting
+2022-10-19 14:29:49.065 +05:30 [DBG] Loaded hosting startup assembly HcmClaim
+2022-10-19 14:29:49.065 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-19 14:29:49.065 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-19 14:29:49.065 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-19 14:29:49.065 +05:30 [INF] Hosting environment: Development
+2022-10-19 14:29:49.065 +05:30 [INF] Content root path: C:\HCM\HcmClaim\HcmClaim\
+2022-10-19 14:29:49.065 +05:30 [DBG] Hosting started
+2022-10-19 14:29:49.083 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/index.html - -
+2022-10-19 14:29:49.106 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-10-19 14:29:49.121 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-10-19 14:29:49.122 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 14:29:49.199 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-10-19 14:29:49.292 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2022-10-19 14:29:49.294 +05:30 [DBG] Connection ID "18014398541157367922" disconnecting.
+2022-10-19 14:29:49.294 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/index.html - - - 200 - text/html;charset=utf-8 213.4515ms
+2022-10-19 14:29:49.297 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/_vs/browserLink - -
+2022-10-19 14:29:49.298 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/_framework/aspnetcore-browser-refresh.js - -
+2022-10-19 14:29:49.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 2.9675ms
+2022-10-19 14:29:49.331 +05:30 [DBG] Connection ID "18302628887244308563" disconnecting.
+2022-10-19 14:29:49.331 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.8025ms
+2022-10-19 14:29:49.576 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44316/swagger/v1/swagger.json - -
+2022-10-19 14:29:49.576 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-10-19 14:29:49.576 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 14:29:49.660 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44316/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.1386ms
+2022-10-19 17:12:50.288 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-10-19 17:12:50.377 +05:30 [DBG] Hosting starting
+2022-10-19 17:12:50.415 +05:30 [DBG] Loaded hosting startup assembly HcmClaim
+2022-10-19 17:12:50.415 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-19 17:12:50.415 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-19 17:12:50.415 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-19 17:12:50.415 +05:30 [INF] Hosting environment: Development
+2022-10-19 17:12:50.415 +05:30 [INF] Content root path: C:\HCM\HcmClaim\HcmClaim\
+2022-10-19 17:12:50.415 +05:30 [DBG] Hosting started
+2022-10-19 17:12:50.432 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:44316/HealthCare/GetClaims - -
+2022-10-19 17:12:50.444 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-10-19 17:12:50.467 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/GetClaims'
+2022-10-19 17:12:50.471 +05:30 [DBG] Endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)' with route pattern 'HealthCare/GetClaims' is valid for the request path '/HealthCare/GetClaims'
+2022-10-19 17:12:50.472 +05:30 [DBG] Request matched endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-19 17:12:50.500 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-19 17:12:50.502 +05:30 [INF] Executing endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-19 17:12:50.510 +05:30 [INF] Route matched with {action = "getClaimsList", controller = "Claim"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[HcmClaim.Modals.Claim] getClaimsList() on controller HcmClaim.Controllers.ClaimController (HcmClaim).
+2022-10-19 17:12:50.513 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-19 17:12:50.513 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-19 17:12:50.513 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-19 17:12:50.513 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-19 17:12:50.513 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-19 17:12:50.514 +05:30 [DBG] Executing controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-19 17:12:50.629 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-19 17:12:50.726 +05:30 [DBG] Executed controller factory for controller HcmClaim.Controllers.ClaimController (HcmClaim)
+2022-10-19 17:12:50.733 +05:30 [INF] Getting claims from database
+2022-10-19 17:12:51.227 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-19 17:12:51.273 +05:30 [DBG] Compiling query expression: 
+'DbSet<Claim>()'
+2022-10-19 17:12:51.422 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Claim>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Claim.ClaimId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Claim.ClaimAmount (int) Required, 1], [Property: Claim.ClaimDate (DateTime) Required, 2], [Property: Claim.ClaimType (string) Required, 3], [Property: Claim.MemberId (int) Required, 4], [Property: Claim.Remarks (string) Required MaxLength(1000), 5] }
+        SELECT c.ClaimId, c.ClaimAmount, c.ClaimDate, c.ClaimType, c.MemberId, c.Remarks
+        FROM Claims AS c), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Claim>, 
+    HcmClaim.Modals.ToDoContext, 
+    False, 
+    False, 
+    True
+)'
+2022-10-19 17:12:51.453 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-19 17:12:51.485 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (29ms).
+2022-10-19 17:12:51.488 +05:30 [DBG] Opening connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-19 17:12:51.720 +05:30 [DBG] Opened connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-19 17:12:51.727 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-19 17:12:51.751 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ClaimId], [c].[ClaimAmount], [c].[ClaimDate], [c].[ClaimType], [c].[MemberId], [c].[Remarks]
+FROM [Claims] AS [c]
+2022-10-19 17:12:51.776 +05:30 [DBG] Context 'ToDoContext' started tracking 'Claim' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:51.802 +05:30 [DBG] A data reader was disposed.
+2022-10-19 17:12:51.804 +05:30 [DBG] Closing connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-19 17:12:51.808 +05:30 [DBG] Closed connection to database 'HcmClaim' on server 'LTIN400320'.
+2022-10-19 17:12:51.809 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-19 17:12:51.810 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-19 17:12:51.810 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-19 17:12:51.810 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-19 17:12:51.811 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-19 17:12:51.811 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HcmClaim.Modals.Claim, HcmClaim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-19 17:12:51.860 +05:30 [INF] Executed action HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim) in 1341.9678ms
+2022-10-19 17:12:51.860 +05:30 [INF] Executed endpoint 'HcmClaim.Controllers.ClaimController.getClaimsList (HcmClaim)'
+2022-10-19 17:12:51.864 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-19 17:12:51.866 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:44316/HealthCare/GetClaims - - - 200 - application/json;+charset=utf-8 1439.0472ms
+2022-10-19 17:15:00.049 +05:30 [INF] Application is shutting down...
+2022-10-19 17:15:00.050 +05:30 [DBG] Hosting stopping
+2022-10-19 17:15:00.051 +05:30 [DBG] Hosting stopped

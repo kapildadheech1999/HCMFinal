@@ -1,0 +1,27 @@
+.login-content {
+    width: 40%;
+    margin: 3% 30%;
+    padding: 30px;
+}
+
+.login-content>h1 {
+    margin-bottom: 30px;
+}
+
+.login-content>form>input {
+    margin-bottom: 20px;
+}
+
+.login-content>form>label {
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+
+.login-content>form>button {
+    margin-top: 10px;
+    padding: 10px
+}
+
+.alert.alert-danger {
+    padding: 10px;
+}

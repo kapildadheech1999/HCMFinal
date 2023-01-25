@@ -1,0 +1,350 @@
+2022-10-19 08:18:27.462 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-10-19 08:18:27.536 +05:30 [DBG] Hosting starting
+2022-10-19 08:18:27.578 +05:30 [DBG] Loaded hosting startup assembly HcmMember
+2022-10-19 08:18:27.578 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-19 08:18:27.578 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-19 08:18:27.578 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-19 08:18:27.578 +05:30 [INF] Hosting environment: Development
+2022-10-19 08:18:27.578 +05:30 [INF] Content root path: C:\HCM\HcmMember\HcmMember\
+2022-10-19 08:18:27.578 +05:30 [DBG] Hosting started
+2022-10-19 08:18:27.596 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/swagger/index.html - -
+2022-10-19 08:18:27.650 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-10-19 08:18:27.666 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-10-19 08:18:27.666 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 08:18:27.735 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-10-19 08:18:27.887 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2022-10-19 08:18:27.890 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/swagger/index.html - - - 200 - text/html;charset=utf-8 296.2265ms
+2022-10-19 08:18:27.921 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/_framework/aspnetcore-browser-refresh.js - -
+2022-10-19 08:18:27.922 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/_vs/browserLink - -
+2022-10-19 08:18:27.925 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/_framework/aspnetcore-browser-refresh.js - - - 200 11988 application/javascript;+charset=utf-8 3.7729ms
+2022-10-19 08:18:27.925 +05:30 [DBG] Connection ID "18014398528272465967" disconnecting.
+2022-10-19 08:18:27.986 +05:30 [DBG] Connection ID "18086456126605361153" disconnecting.
+2022-10-19 08:18:27.986 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.6730ms
+2022-10-19 08:18:28.056 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/swagger/v1/swagger.json - -
+2022-10-19 08:18:28.057 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-10-19 08:18:28.057 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 08:18:28.154 +05:30 [DBG] Connection ID "18302628934488948884" disconnecting.
+2022-10-19 08:18:28.154 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 97.1522ms
+2022-10-19 08:20:29.211 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44335/HealthCare/AddMember application/json 280
+2022-10-19 08:20:29.217 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/AddMember'
+2022-10-19 08:20:29.219 +05:30 [DBG] Endpoint 'HcmMember.Controllers.MemberAndPhysicianController.CreateMember (HcmMember)' with route pattern 'HealthCare/AddMember' is valid for the request path '/HealthCare/AddMember'
+2022-10-19 08:20:29.220 +05:30 [DBG] Request matched endpoint 'HcmMember.Controllers.MemberAndPhysicianController.CreateMember (HcmMember)'
+2022-10-19 08:20:29.221 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-19 08:20:29.222 +05:30 [INF] Executing endpoint 'HcmMember.Controllers.MemberAndPhysicianController.CreateMember (HcmMember)'
+2022-10-19 08:20:29.242 +05:30 [INF] Route matched with {action = "CreateMember", controller = "MemberAndPhysician"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult CreateMember(HcmMember.Dto.MemberDto) on controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember).
+2022-10-19 08:20:29.245 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-19 08:20:29.246 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-19 08:20:29.246 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-19 08:20:29.246 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-19 08:20:29.246 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-19 08:20:29.246 +05:30 [DBG] Executing controller factory for controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember)
+2022-10-19 08:20:29.439 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-19 08:20:29.459 +05:30 [DBG] Executed controller factory for controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember)
+2022-10-19 08:20:29.462 +05:30 [DBG] Attempting to bind parameter 'memberDto' of type 'HcmMember.Dto.MemberDto' ...
+2022-10-19 08:20:29.464 +05:30 [DBG] Attempting to bind parameter 'memberDto' of type 'HcmMember.Dto.MemberDto' using the name '' in request data ...
+2022-10-19 08:20:29.465 +05:30 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-19 08:20:29.476 +05:30 [DBG] JSON input formatter succeeded, deserializing to type 'HcmMember.Dto.MemberDto'
+2022-10-19 08:20:29.476 +05:30 [DBG] Done attempting to bind parameter 'memberDto' of type 'HcmMember.Dto.MemberDto'.
+2022-10-19 08:20:29.476 +05:30 [DBG] Done attempting to bind parameter 'memberDto' of type 'HcmMember.Dto.MemberDto'.
+2022-10-19 08:20:29.476 +05:30 [DBG] Attempting to validate the bound parameter 'memberDto' of type 'HcmMember.Dto.MemberDto' ...
+2022-10-19 08:20:29.484 +05:30 [DBG] Done attempting to validate the bound parameter 'memberDto' of type 'HcmMember.Dto.MemberDto'.
+2022-10-19 08:20:29.491 +05:30 [INF] Adding member in database
+2022-10-19 08:20:30.185 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-19 08:20:30.208 +05:30 [DBG] 'ToDoContext' generated a temporary value for the property 'MemberId.Member'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 08:20:30.257 +05:30 [DBG] Context 'ToDoContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 08:20:30.260 +05:30 [DBG] SaveChanges starting for 'ToDoContext'.
+2022-10-19 08:20:30.263 +05:30 [DBG] DetectChanges starting for 'ToDoContext'.
+2022-10-19 08:20:30.273 +05:30 [DBG] DetectChanges completed for 'ToDoContext'.
+2022-10-19 08:20:30.316 +05:30 [DBG] Opening connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 08:20:30.567 +05:30 [DBG] Opened connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 08:20:30.568 +05:30 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-10-19 08:20:30.577 +05:30 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2022-10-19 08:20:30.628 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-19 08:20:30.633 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2022-10-19 08:20:30.650 +05:30 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 20), @p7='?' (DbType = DateTime2), @p8='?' (Size = 20), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (Size = 4000), @p12='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Members] ([Address], [City], [ConfirmPassword], [CreationDate], [DateOfBirth], [Email], [FirstName], [LastModificationDate], [LastName], [Password], [PhysicianId], [State], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+SELECT [MemberId]
+FROM [Members]
+WHERE @@ROWCOUNT = 1 AND [MemberId] = scope_identity();
+2022-10-19 08:20:30.694 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 20), @p7='?' (DbType = DateTime2), @p8='?' (Size = 20), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (Size = 4000), @p12='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Members] ([Address], [City], [ConfirmPassword], [CreationDate], [DateOfBirth], [Email], [FirstName], [LastModificationDate], [LastName], [Password], [PhysicianId], [State], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+SELECT [MemberId]
+FROM [Members]
+WHERE @@ROWCOUNT = 1 AND [MemberId] = scope_identity();
+2022-10-19 08:20:30.711 +05:30 [DBG] The foreign key property 'Member.MemberId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-10-19 08:20:30.721 +05:30 [DBG] A data reader was disposed.
+2022-10-19 08:20:30.723 +05:30 [DBG] Committing transaction.
+2022-10-19 08:20:30.728 +05:30 [DBG] Committed transaction.
+2022-10-19 08:20:30.729 +05:30 [DBG] Closing connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 08:20:30.733 +05:30 [DBG] Closed connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 08:20:30.734 +05:30 [DBG] Disposing transaction.
+2022-10-19 08:20:30.743 +05:30 [DBG] An entity of type 'Member' tracked by 'ToDoContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 08:20:30.744 +05:30 [DBG] SaveChanges completed for 'ToDoContext' with 1 entities written to the database.
+2022-10-19 08:20:30.745 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-19 08:20:30.746 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-19 08:20:30.746 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-19 08:20:30.746 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-19 08:20:30.746 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-19 08:20:30.747 +05:30 [INF] Executing CreatedResult, writing value of type 'HcmMember.Dto.MemberDto'.
+2022-10-19 08:20:30.755 +05:30 [INF] Executed action HcmMember.Controllers.MemberAndPhysicianController.CreateMember (HcmMember) in 1504.5556ms
+2022-10-19 08:20:30.755 +05:30 [INF] Executed endpoint 'HcmMember.Controllers.MemberAndPhysicianController.CreateMember (HcmMember)'
+2022-10-19 08:20:30.755 +05:30 [DBG] Connection ID "18086456143785230361" disconnecting.
+2022-10-19 08:20:30.757 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-19 08:20:30.758 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44335/HealthCare/AddMember application/json 280 - 201 - application/json;+charset=utf-8 1547.2420ms
+2022-10-19 11:10:25.158 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-10-19 11:10:25.229 +05:30 [DBG] Hosting starting
+2022-10-19 11:10:25.265 +05:30 [DBG] Loaded hosting startup assembly HcmMember
+2022-10-19 11:10:25.265 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-19 11:10:25.265 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-19 11:10:25.265 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-19 11:10:25.265 +05:30 [INF] Hosting environment: Development
+2022-10-19 11:10:25.265 +05:30 [INF] Content root path: C:\HCM\HcmMember\HcmMember\
+2022-10-19 11:10:25.265 +05:30 [DBG] Hosting started
+2022-10-19 11:10:25.283 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/swagger/index.html - -
+2022-10-19 11:10:25.305 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-10-19 11:10:25.323 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-10-19 11:10:25.323 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 11:10:25.391 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-10-19 11:10:25.488 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2022-10-19 11:10:25.490 +05:30 [DBG] Connection ID "18086456143785230379" disconnecting.
+2022-10-19 11:10:25.491 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/swagger/index.html - - - 200 - text/html;charset=utf-8 210.5545ms
+2022-10-19 11:10:25.492 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/_framework/aspnetcore-browser-refresh.js - -
+2022-10-19 11:10:25.492 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/_vs/browserLink - -
+2022-10-19 11:10:25.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/_framework/aspnetcore-browser-refresh.js - - - 200 11988 application/javascript;+charset=utf-8 3.3428ms
+2022-10-19 11:10:25.496 +05:30 [DBG] Connection ID "18230571297501347892" disconnecting.
+2022-10-19 11:10:25.528 +05:30 [DBG] Connection ID "18230571318976184525" disconnecting.
+2022-10-19 11:10:25.528 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.6522ms
+2022-10-19 11:10:25.719 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/swagger/v1/swagger.json - -
+2022-10-19 11:10:25.719 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-10-19 11:10:25.719 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 11:10:25.817 +05:30 [DBG] Connection ID "17798225759043584099" disconnecting.
+2022-10-19 11:10:25.817 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.5492ms
+2022-10-19 12:05:04.373 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-10-19 12:05:04.463 +05:30 [DBG] Hosting starting
+2022-10-19 12:05:04.505 +05:30 [DBG] Loaded hosting startup assembly HcmMember
+2022-10-19 12:05:04.505 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-19 12:05:04.505 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-19 12:05:04.506 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-19 12:05:04.506 +05:30 [INF] Hosting environment: Development
+2022-10-19 12:05:04.506 +05:30 [INF] Content root path: C:\HCM\HcmMember\HcmMember\
+2022-10-19 12:05:04.506 +05:30 [DBG] Hosting started
+2022-10-19 12:05:04.523 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/swagger/index.html - -
+2022-10-19 12:05:04.546 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-10-19 12:05:04.563 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-10-19 12:05:04.563 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 12:05:04.633 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-10-19 12:05:04.745 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2022-10-19 12:05:04.747 +05:30 [DBG] Connection ID "17942340955709374577" disconnecting.
+2022-10-19 12:05:04.748 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/swagger/index.html - - - 200 - text/html;charset=utf-8 227.0962ms
+2022-10-19 12:05:04.756 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/_vs/browserLink - -
+2022-10-19 12:05:04.756 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/_framework/aspnetcore-browser-refresh.js - -
+2022-10-19 12:05:04.760 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/_framework/aspnetcore-browser-refresh.js - - - 200 11988 application/javascript;+charset=utf-8 3.2324ms
+2022-10-19 12:05:04.760 +05:30 [DBG] Connection ID "18158513733528191035" disconnecting.
+2022-10-19 12:05:04.801 +05:30 [DBG] Connection ID "18302628921604047081" disconnecting.
+2022-10-19 12:05:04.801 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 44.8602ms
+2022-10-19 12:05:05.177 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/swagger/v1/swagger.json - -
+2022-10-19 12:05:05.177 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-10-19 12:05:05.177 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 12:05:05.290 +05:30 [DBG] Connection ID "18158513724938256478" disconnecting.
+2022-10-19 12:05:05.290 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.5550ms
+2022-10-19 12:08:30.845 +05:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-10-19 12:08:30.924 +05:30 [DBG] Hosting starting
+2022-10-19 12:08:30.955 +05:30 [DBG] Loaded hosting startup assembly HcmMember
+2022-10-19 12:08:30.955 +05:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-19 12:08:30.955 +05:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-19 12:08:30.955 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-19 12:08:30.955 +05:30 [INF] Hosting environment: Development
+2022-10-19 12:08:30.955 +05:30 [INF] Content root path: C:\HCM\HcmMember\HcmMember\
+2022-10-19 12:08:30.955 +05:30 [DBG] Hosting started
+2022-10-19 12:08:30.971 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/swagger/index.html - -
+2022-10-19 12:08:30.989 +05:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-10-19 12:08:31.004 +05:30 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-10-19 12:08:31.004 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 12:08:31.068 +05:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-10-19 12:08:31.154 +05:30 [DBG] Response markup was updated to include browser refresh script injection.
+2022-10-19 12:08:31.155 +05:30 [DBG] Connection ID "18158513699168452639" disconnecting.
+2022-10-19 12:08:31.156 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/swagger/index.html - - - 200 - text/html;charset=utf-8 187.6574ms
+2022-10-19 12:08:31.165 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/_vs/browserLink - -
+2022-10-19 12:08:31.165 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/_framework/aspnetcore-browser-refresh.js - -
+2022-10-19 12:08:31.169 +05:30 [DBG] Connection ID "18158513742118125707" disconnecting.
+2022-10-19 12:08:31.169 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/_framework/aspnetcore-browser-refresh.js - - - 200 11988 application/javascript;+charset=utf-8 3.5908ms
+2022-10-19 12:08:31.200 +05:30 [DBG] Connection ID "18230571336156053555" disconnecting.
+2022-10-19 12:08:31.201 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.7228ms
+2022-10-19 12:08:31.321 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44335/swagger/v1/swagger.json - -
+2022-10-19 12:08:31.321 +05:30 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-10-19 12:08:31.321 +05:30 [DBG] Request did not match any endpoints
+2022-10-19 12:08:31.412 +05:30 [DBG] Connection ID "18014398532567433246" disconnecting.
+2022-10-19 12:08:31.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44335/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 91.2208ms
+2022-10-19 17:12:51.904 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:44335/HealthCare/GetMembers - -
+2022-10-19 17:12:51.920 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/GetMembers'
+2022-10-19 17:12:51.924 +05:30 [DBG] Endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetMembersList (HcmMember)' with route pattern 'HealthCare/GetMembers' is valid for the request path '/HealthCare/GetMembers'
+2022-10-19 17:12:51.924 +05:30 [DBG] Request matched endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetMembersList (HcmMember)'
+2022-10-19 17:12:51.928 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-19 17:12:51.932 +05:30 [INF] Executing endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetMembersList (HcmMember)'
+2022-10-19 17:12:51.944 +05:30 [INF] Route matched with {action = "GetMembersList", controller = "MemberAndPhysician"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[HcmMember.Dto.MemberSearchDto]] GetMembersList() on controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember).
+2022-10-19 17:12:51.947 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-19 17:12:51.947 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-19 17:12:51.947 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-19 17:12:51.947 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-19 17:12:51.947 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-19 17:12:51.948 +05:30 [DBG] Executing controller factory for controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember)
+2022-10-19 17:12:52.142 +05:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-19 17:12:52.162 +05:30 [DBG] Executed controller factory for controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember)
+2022-10-19 17:12:52.169 +05:30 [INF] Getting Member List
+2022-10-19 17:12:52.807 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-19 17:12:52.850 +05:30 [DBG] Compiling query expression: 
+'DbSet<Member>()'
+2022-10-19 17:12:52.991 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Member>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Member.MemberId (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Member.Address (string) Required MaxLength(100), 1], [Property: Member.City (string) Required, 2], [Property: Member.ConfirmPassword (string) Required, 3], [Property: Member.CreationDate (DateTime) Required, 4], [Property: Member.DateOfBirth (DateTime) Required, 5], [Property: Member.Email (string) Required, 6], [Property: Member.FirstName (string) Required MaxLength(20), 7], [Property: Member.LastModificationDate (DateTime) Required, 8], [Property: Member.LastName (string) Required MaxLength(20), 9], [Property: Member.Password (string) Required, 10], [Property: Member.PhysicianId (int) Required FK Index, 11], [Property: Member.State (string) Required, 12], [Property: Member.UserName (string) Required, 13] }
+        SELECT m.MemberId, m.Address, m.City, m.ConfirmPassword, m.CreationDate, m.DateOfBirth, m.Email, m.FirstName, m.LastModificationDate, m.LastName, m.Password, m.PhysicianId, m.State, m.UserName
+        FROM Members AS m), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Member>, 
+    HcmMember.Modals.ToDoContext, 
+    False, 
+    False, 
+    True
+)'
+2022-10-19 17:12:53.017 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-19 17:12:53.048 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (28ms).
+2022-10-19 17:12:53.050 +05:30 [DBG] Opening connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:12:53.270 +05:30 [DBG] Opened connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:12:53.278 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MemberId], [m].[Address], [m].[City], [m].[ConfirmPassword], [m].[CreationDate], [m].[DateOfBirth], [m].[Email], [m].[FirstName], [m].[LastModificationDate], [m].[LastName], [m].[Password], [m].[PhysicianId], [m].[State], [m].[UserName]
+FROM [Members] AS [m]
+2022-10-19 17:12:53.308 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MemberId], [m].[Address], [m].[City], [m].[ConfirmPassword], [m].[CreationDate], [m].[DateOfBirth], [m].[Email], [m].[FirstName], [m].[LastModificationDate], [m].[LastName], [m].[Password], [m].[PhysicianId], [m].[State], [m].[UserName]
+FROM [Members] AS [m]
+2022-10-19 17:12:53.323 +05:30 [DBG] Context 'ToDoContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.355 +05:30 [DBG] Context 'ToDoContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.355 +05:30 [DBG] Context 'ToDoContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.356 +05:30 [DBG] Context 'ToDoContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.358 +05:30 [DBG] A data reader was disposed.
+2022-10-19 17:12:53.360 +05:30 [DBG] Closing connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:12:53.363 +05:30 [DBG] Closed connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:12:53.380 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-19 17:12:53.381 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-19 17:12:53.381 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-19 17:12:53.381 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-19 17:12:53.381 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-19 17:12:53.381 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HcmMember.Dto.MemberSearchDto, HcmMember, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-19 17:12:53.392 +05:30 [INF] Executed action HcmMember.Controllers.MemberAndPhysicianController.GetMembersList (HcmMember) in 1441.0855ms
+2022-10-19 17:12:53.392 +05:30 [INF] Executed endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetMembersList (HcmMember)'
+2022-10-19 17:12:53.394 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-19 17:12:53.395 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:44335/HealthCare/GetMembers - - - 200 - application/json;+charset=utf-8 1492.5081ms
+2022-10-19 17:12:53.487 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:44335/HealthCare/Physicians - -
+2022-10-19 17:12:53.489 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/Physicians'
+2022-10-19 17:12:53.489 +05:30 [DBG] Endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetPhysicianList (HcmMember)' with route pattern 'HealthCare/Physicians' is valid for the request path '/HealthCare/Physicians'
+2022-10-19 17:12:53.489 +05:30 [DBG] Request matched endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetPhysicianList (HcmMember)'
+2022-10-19 17:12:53.489 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-19 17:12:53.489 +05:30 [INF] Executing endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetPhysicianList (HcmMember)'
+2022-10-19 17:12:53.491 +05:30 [INF] Route matched with {action = "GetPhysicianList", controller = "MemberAndPhysician"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[HcmMember.Dto.PhysicianDto]] GetPhysicianList() on controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember).
+2022-10-19 17:12:53.491 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-19 17:12:53.492 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-19 17:12:53.492 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-19 17:12:53.492 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-19 17:12:53.492 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-19 17:12:53.492 +05:30 [DBG] Executing controller factory for controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember)
+2022-10-19 17:12:53.492 +05:30 [DBG] Executed controller factory for controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember)
+2022-10-19 17:12:53.493 +05:30 [INF] Getting Physician List
+2022-10-19 17:12:53.496 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-19 17:12:53.497 +05:30 [DBG] Compiling query expression: 
+'DbSet<Physician>()'
+2022-10-19 17:12:53.500 +05:30 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Physician>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Physician.PhysicianId (int) Required PK AfterSave:Throw, 0], [Property: Physician.PhysicianName (string) Required, 1], [Property: Physician.PhysicianState (string) Required, 2] }
+        SELECT p.PhysicianId, p.PhysicianName, p.PhysicianState
+        FROM Physicians AS p), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Physician>, 
+    HcmMember.Modals.ToDoContext, 
+    False, 
+    False, 
+    True
+)'
+2022-10-19 17:12:53.500 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-19 17:12:53.500 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-19 17:12:53.500 +05:30 [DBG] Opening connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:12:53.501 +05:30 [DBG] Opened connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:12:53.501 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PhysicianId], [p].[PhysicianName], [p].[PhysicianState]
+FROM [Physicians] AS [p]
+2022-10-19 17:12:53.505 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PhysicianId], [p].[PhysicianName], [p].[PhysicianState]
+FROM [Physicians] AS [p]
+2022-10-19 17:12:53.507 +05:30 [DBG] Context 'ToDoContext' started tracking 'Physician' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.511 +05:30 [DBG] Context 'ToDoContext' started tracking 'Physician' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.511 +05:30 [DBG] Context 'ToDoContext' started tracking 'Physician' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.511 +05:30 [DBG] Context 'ToDoContext' started tracking 'Physician' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.511 +05:30 [DBG] Context 'ToDoContext' started tracking 'Physician' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.511 +05:30 [DBG] Context 'ToDoContext' started tracking 'Physician' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.511 +05:30 [DBG] Context 'ToDoContext' started tracking 'Physician' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.511 +05:30 [DBG] Context 'ToDoContext' started tracking 'Physician' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:12:53.511 +05:30 [DBG] A data reader was disposed.
+2022-10-19 17:12:53.511 +05:30 [DBG] Closing connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:12:53.511 +05:30 [DBG] Closed connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:12:53.514 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-19 17:12:53.514 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-19 17:12:53.514 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-19 17:12:53.514 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-19 17:12:53.514 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-19 17:12:53.514 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HcmMember.Dto.PhysicianDto, HcmMember, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-19 17:12:53.516 +05:30 [INF] Executed action HcmMember.Controllers.MemberAndPhysicianController.GetPhysicianList (HcmMember) in 23.8717ms
+2022-10-19 17:12:53.516 +05:30 [INF] Executed endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetPhysicianList (HcmMember)'
+2022-10-19 17:12:53.516 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-19 17:12:53.516 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:44335/HealthCare/Physicians - - - 200 - application/json;+charset=utf-8 28.6232ms
+2022-10-19 17:14:40.885 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:44335/HealthCare/GetMembers - -
+2022-10-19 17:14:40.886 +05:30 [DBG] 1 candidate(s) found for the request path '/HealthCare/GetMembers'
+2022-10-19 17:14:40.886 +05:30 [DBG] Endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetMembersList (HcmMember)' with route pattern 'HealthCare/GetMembers' is valid for the request path '/HealthCare/GetMembers'
+2022-10-19 17:14:40.886 +05:30 [DBG] Request matched endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetMembersList (HcmMember)'
+2022-10-19 17:14:40.886 +05:30 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-10-19 17:14:40.886 +05:30 [INF] Executing endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetMembersList (HcmMember)'
+2022-10-19 17:14:40.886 +05:30 [INF] Route matched with {action = "GetMembersList", controller = "MemberAndPhysician"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[HcmMember.Dto.MemberSearchDto]] GetMembersList() on controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember).
+2022-10-19 17:14:40.886 +05:30 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-10-19 17:14:40.886 +05:30 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-10-19 17:14:40.886 +05:30 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-10-19 17:14:40.886 +05:30 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-10-19 17:14:40.886 +05:30 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-10-19 17:14:40.886 +05:30 [DBG] Executing controller factory for controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember)
+2022-10-19 17:14:40.888 +05:30 [DBG] Executed controller factory for controller HcmMember.Controllers.MemberAndPhysicianController (HcmMember)
+2022-10-19 17:14:40.888 +05:30 [INF] Getting Member List
+2022-10-19 17:14:40.931 +05:30 [INF] Entity Framework Core 6.0.9 initialized 'ToDoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.9' with options: None
+2022-10-19 17:14:40.932 +05:30 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-10-19 17:14:40.932 +05:30 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-19 17:14:40.932 +05:30 [DBG] Opening connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:14:40.932 +05:30 [DBG] Opened connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:14:40.933 +05:30 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MemberId], [m].[Address], [m].[City], [m].[ConfirmPassword], [m].[CreationDate], [m].[DateOfBirth], [m].[Email], [m].[FirstName], [m].[LastModificationDate], [m].[LastName], [m].[Password], [m].[PhysicianId], [m].[State], [m].[UserName]
+FROM [Members] AS [m]
+2022-10-19 17:14:40.934 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MemberId], [m].[Address], [m].[City], [m].[ConfirmPassword], [m].[CreationDate], [m].[DateOfBirth], [m].[Email], [m].[FirstName], [m].[LastModificationDate], [m].[LastName], [m].[Password], [m].[PhysicianId], [m].[State], [m].[UserName]
+FROM [Members] AS [m]
+2022-10-19 17:14:40.935 +05:30 [DBG] Context 'ToDoContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:14:40.935 +05:30 [DBG] Context 'ToDoContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:14:40.935 +05:30 [DBG] Context 'ToDoContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:14:40.935 +05:30 [DBG] Context 'ToDoContext' started tracking 'Member' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-19 17:14:40.935 +05:30 [DBG] A data reader was disposed.
+2022-10-19 17:14:40.935 +05:30 [DBG] Closing connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:14:40.935 +05:30 [DBG] Closed connection to database 'HCMMember' on server 'LTIN400320'.
+2022-10-19 17:14:40.935 +05:30 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-10-19 17:14:40.935 +05:30 [DBG] No information found on request to perform content negotiation.
+2022-10-19 17:14:40.935 +05:30 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-19 17:14:40.935 +05:30 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-19 17:14:40.935 +05:30 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-19 17:14:40.935 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[HcmMember.Dto.MemberSearchDto, HcmMember, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-10-19 17:14:40.936 +05:30 [INF] Executed action HcmMember.Controllers.MemberAndPhysicianController.GetMembersList (HcmMember) in 49.7655ms
+2022-10-19 17:14:40.936 +05:30 [INF] Executed endpoint 'HcmMember.Controllers.MemberAndPhysicianController.GetMembersList (HcmMember)'
+2022-10-19 17:14:40.936 +05:30 [DBG] 'ToDoContext' disposed.
+2022-10-19 17:14:40.936 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:44335/HealthCare/GetMembers - - - 200 - application/json;+charset=utf-8 50.7205ms
+2022-10-19 17:15:00.381 +05:30 [INF] Application is shutting down...
+2022-10-19 17:15:00.382 +05:30 [DBG] Hosting stopping
+2022-10-19 17:15:00.383 +05:30 [DBG] Hosting stopped
